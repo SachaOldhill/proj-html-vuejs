@@ -12,10 +12,15 @@ function initVue() {
       {
         "name":"Courses",
       }],
+      'activeIndex':'',
     },
     computed: {
     },
     methods: {
+      barHover: function(bar) {
+      this.activeIndex = this.nav.indexOf(bar);
+      console.log('enter');
+    },
     }
   });
 }

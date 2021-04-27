@@ -27,7 +27,7 @@
         </div>
         <div class="navbar">
           <ul>
-            <li class="nav_li" v-for="bar in nav">{{bar.name}}</li>
+            <li @mouseover='barHover' class="nav_li" v-for="bar in nav">{{bar.name}}</li>
           </ul>
         </div>
         <div class="navbar_button">

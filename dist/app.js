@@ -19,10 +19,16 @@ function initVue() {
         }]
       }, {
         "name": "Courses"
-      }]
+      }],
+      'activeIndex': ''
     },
     computed: {},
-    methods: {}
+    methods: {
+      barHover: function barHover(bar) {
+        this.activeIndex = this.nav.indexOf(bar);
+        console.log('enter');
+      }
+    }
   });
 }
 

@@ -1,12 +1,15 @@
-div#app nav .navigation {
-  position: relative;
+div#app nav .navigation .logo {
+  background-color: #000000;
 }
 div#app nav .navigation .logo img {
-  height: 100px;
+  height: 70px;
 }
 div#app nav .navigation .navbar li {
   padding-right: 20px;
   font-size: 20px;
+}
+div#app nav .container_img {
+  position: relative;
 }
 div#app nav .container_img .layover {
   opacity: 0.3;

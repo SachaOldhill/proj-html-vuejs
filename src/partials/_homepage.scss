@@ -1,10 +1,10 @@
 div#app {
   nav {
     .navigation {
-      position: relative;
       .logo {
+        background-color: $bg-b3;
         img {
-          height: 100px;
+          height: 70px;
         }
       }
       .navbar {
@@ -17,6 +17,7 @@ div#app {
     }
     .nav_slide {}
     .container_img{
+      position: relative;
       .layover {
         opacity: 0.3;
         background-color: $bg-r1;
