@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap V4 -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+  <!-- VueJS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- JS -->
+  <script src="app.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div id="app">
+    <nav>
+      <div class="navigation">
+        <div class="logo">
+          <img src="edu/img/logo.png" alt="">
+        </div>
+        <div class="navbar">
+          <ul>
+            <li class="nav_li" v-for="bar in nav">{{bar.name}}</li>
+          </ul>
+        </div>
+        <div class="navbar_button">
+
+        </div>
+      </div>
+      <div class="nav_slide">
+        <h1></h1>
+        <p></p>
+        <div class="nav_slide_button">
+        </div>
+      </div>
+      <div v-for=''class="container_img">
+        <img src="edu\img\slider2.jpg" alt="">
+        <div class="layover">
+        </div>
+      </div>
+    </nav>
+  </div>
+</body>
+
+</html>
