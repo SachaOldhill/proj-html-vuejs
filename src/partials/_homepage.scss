@@ -51,8 +51,7 @@ div#app {
     .container_img{
       position: relative;
       .layover {
-        opacity: 0.8;
-        background-color: $bg-r1;
+        background-color: $bg-r1-a;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -70,6 +69,9 @@ div#app {
   }
   main{
     .graduation{
+      background: url('edu/img/home-background.png');
+      height: 1000px;
+      background-size: 100px;
       .img_book{
         height: 80px;
       }
