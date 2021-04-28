@@ -1,18 +1,54 @@
+div#app nav .navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 40px;
+}
 div#app nav .navigation .logo {
-  background-color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 30px;
 }
 div#app nav .navigation .logo img {
   height: 70px;
+}
+div#app nav .navigation .navbar {
+  vertical-align: middle;
+  display: inline-block;
 }
 div#app nav .navigation .navbar li {
   padding-right: 20px;
   font-size: 20px;
 }
+div#app nav .navigation .navbar_button {
+  display: inline-block;
+  font-weight: bold;
+  width: 250px;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-size: 30px;
+  background-color: #e9d758;
+  transition: 500ms linear;
+  text-align: center;
+}
+div#app nav .navigation .navbar_button a {
+  color: #ffffff;
+}
+div#app nav .navigation .navbar_button a:hover {
+  color: #e56768;
+  transition: 500ms linear;
+}
+div#app nav .navigation .navbar_button:hover {
+  color: #e56768;
+  background: #ffffff;
+  transition: 500ms linear;
+}
 div#app nav .container_img {
   position: relative;
 }
 div#app nav .container_img .layover {
-  opacity: 0.3;
+  opacity: 0.8;
   background-color: #e56768;
   height: 100%;
   width: 100%;
@@ -20,9 +56,24 @@ div#app nav .container_img .layover {
   top: 0;
   left: 0;
 }
+div#app nav .container_img .layover h1 {
+  font-size: 400px;
+}
 div#app nav .container_img img {
   width: 100%;
   height: 100%;
+}
+div#app main .graduation .img_book {
+  height: 80px;
+}
+div#app main .graduation .img_back {
+  height: 600px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+div#app main .graduation .ttt {
+  padding: 40px;
 }
 
 * {

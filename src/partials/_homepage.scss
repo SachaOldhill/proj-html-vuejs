@@ -1,35 +1,85 @@
 div#app {
   nav {
     .navigation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      padding: 40px;
       .logo {
-        background-color: $bg-b3;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 30px;
         img {
           height: 70px;
         }
       }
       .navbar {
+        vertical-align: middle;
+        display: inline-block;
         li{
           padding-right: 20px;
           font-size: 20px;
         }
       }
-      .navbar_button {}
+      .navbar_button {
+        display: inline-block;
+
+        font-weight: bold;
+        width: 250px;
+        padding: 14px 20px;
+        border-radius: 50px;
+        font-size: 30px;
+        background-color: $bg-y;
+        transition: 500ms linear;
+        text-align: center;
+        a{
+          color: $txt-w1;
+          &:hover{
+            color: $txt-r;
+            transition: 500ms linear;
+          }
+        }
+        &:hover{
+          color: $txt-r;
+          background: $bg-w1;
+          transition: 500ms linear;
+        }
+      }
     }
     .nav_slide {}
     .container_img{
       position: relative;
       .layover {
-        opacity: 0.3;
+        opacity: 0.8;
         background-color: $bg-r1;
         height: 100%;
         width: 100%;
         position: absolute;
         top: 0;
         left: 0;
+        h1{
+          font-size: 400px;
+        }
       }
       img{
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+  main{
+    .graduation{
+      .img_book{
+        height: 80px;
+      }
+      .img_back{
+        height: 600px;
+        width: 100%;
+        object-fit: contain;
+      }
+      .ttt{
+        padding: 40px;
       }
     }
   }
