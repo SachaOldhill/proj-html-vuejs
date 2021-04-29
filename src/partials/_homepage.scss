@@ -129,12 +129,50 @@ div#app {
     .graduation{
       background: url('edu/img/home-background.png');
       background-size: cover;
-      height: 600px;
-      .img_book{
-        height: 80px;
+      background-position: top;
+      height: 480px;
+      width: 100%;
+      padding: 83px 213px 0px;
+      margin: 40px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .graduation_txt{
+        display: inline-block;
+        .img_book{
+          height: 60px;
+          margin-bottom: 15px;
+        }
+        h1{
+          font-size: 54px;
+          width: 533px;
+        }
+        a{
+          font-weight: bold;
+          width: 250px;
+          padding: 14px 40px;
+          border-radius: 50px;
+          font-size: 30px;
+          background-color: $bg-y;
+          transition: 100ms linear;
+          text-align: center;
+          color: $txt-w1;
+          &:hover{
+            color: $txt-w1;
+            background-color: $bg-r1;
+            transition: 100ms linear;
+          }
+        }
+        p{
+          padding: 40px 0px 50px 0px;
+          font-size: 16px;
+        }
       }
-      .ttt{
-        padding: 40px;
+      .graduation_img{
+        display: inline-block;
+        img{
+          height: 300px;
+        }
       }
     }
   }

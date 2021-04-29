@@ -123,13 +123,51 @@ div#app nav .container_img img {
 div#app main .graduation {
   background: url("edu/img/home-background.png");
   background-size: cover;
-  height: 600px;
+  background-position: top;
+  height: 480px;
+  width: 100%;
+  padding: 83px 213px 0px;
+  margin: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-div#app main .graduation .img_book {
-  height: 80px;
+div#app main .graduation .graduation_txt {
+  display: inline-block;
 }
-div#app main .graduation .ttt {
-  padding: 40px;
+div#app main .graduation .graduation_txt .img_book {
+  height: 60px;
+  margin-bottom: 15px;
+}
+div#app main .graduation .graduation_txt h1 {
+  font-size: 54px;
+  width: 533px;
+}
+div#app main .graduation .graduation_txt a {
+  font-weight: bold;
+  width: 250px;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-size: 30px;
+  background-color: #e9d758;
+  transition: 100ms linear;
+  text-align: center;
+  color: #ffffff;
+}
+div#app main .graduation .graduation_txt a:hover {
+  color: #ffffff;
+  background-color: #e56768;
+  transition: 100ms linear;
+}
+div#app main .graduation .graduation_txt p {
+  padding: 40px 0px 50px 0px;
+  font-size: 16px;
+}
+div#app main .graduation .graduation_img {
+  display: inline-block;
+}
+div#app main .graduation .graduation_img img {
+  height: 300px;
 }
 
 * {
