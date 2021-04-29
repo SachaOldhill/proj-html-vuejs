@@ -40,6 +40,15 @@ div#app nav .navigation .navbar_button a:hover {
   background: #ffffff;
   transition: 200ms linear;
 }
+div#app nav .nav_slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1170px;
+  margin: auto;
+  padding-top: 220px;
+}
 div#app nav .container_img {
   position: relative;
 }
