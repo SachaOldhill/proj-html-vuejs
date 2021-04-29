@@ -61,10 +61,31 @@ div#app nav .container_img .layover {
   left: 0;
 }
 div#app nav .container_img .layover h1 {
-  font-size: 100px;
+  font-size: 70px;
 }
 div#app nav .container_img .layover p {
+  font-size: 26px;
+  padding: 45px 0px;
+  text-align: center;
+}
+div#app nav .container_img .layover .nav_slide_button {
+  display: inline-block;
+}
+div#app nav .container_img .layover .nav_slide_button a {
+  font-weight: bold;
+  width: 250px;
+  padding: 14px 40px;
+  border-radius: 50px;
   font-size: 30px;
+  background-color: #e9d758;
+  transition: 200ms linear;
+  text-align: center;
+  color: #ffffff;
+}
+div#app nav .container_img .layover .nav_slide_button a:hover {
+  color: #e56768;
+  background: #ffffff;
+  transition: 200ms linear;
 }
 div#app nav .container_img img {
   width: 100%;
