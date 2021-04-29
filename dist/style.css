@@ -2,6 +2,7 @@ div#app nav .navigation {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 9;
   padding: 40px;
 }
@@ -61,9 +62,11 @@ div#app nav .container_img .layover {
   left: 0;
 }
 div#app nav .container_img .layover h1 {
+  color: #ffffff;
   font-size: 70px;
 }
 div#app nav .container_img .layover p {
+  color: #ffffff;
   font-size: 26px;
   padding: 45px 0px;
   text-align: center;
@@ -85,6 +88,22 @@ div#app nav .container_img .layover .nav_slide_button a {
 div#app nav .container_img .layover .nav_slide_button a:hover {
   color: #e56768;
   background: #ffffff;
+  transition: 200ms linear;
+}
+div#app nav .container_img .layover .nav_slide_button .button {
+  font-weight: bold;
+  width: 250px;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-size: 30px;
+  background-color: #ffffff;
+  transition: 200ms linear;
+  text-align: center;
+  color: #e56768;
+}
+div#app nav .container_img .layover .nav_slide_button .button:hover {
+  color: #ffffff;
+  background: #e9d758;
   transition: 200ms linear;
 }
 div#app nav .container_img img {

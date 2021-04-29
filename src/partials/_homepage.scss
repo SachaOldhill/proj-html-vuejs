@@ -4,6 +4,7 @@ div#app {
       position: absolute;
       top: 0;
       left: 0;
+      right: 0;
       z-index: 9;
       padding: 40px;
       .logo {
@@ -61,9 +62,11 @@ div#app {
         top: 0;
         left: 0;
         h1{
+          color: $txt-w1;
           font-size: 70px;
         }
         p{
+          color: $txt-w1;
           font-size: 26px;
           padding: 45px 0px;
           text-align: center;
@@ -83,6 +86,22 @@ div#app {
             &:hover{
               color: $txt-r;
               background: $bg-w1;
+              transition: 200ms linear;
+            }
+          }
+          .button{
+            font-weight: bold;
+            width: 250px;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-size: 30px;
+            background-color: $bg-w1;
+            transition: 200ms linear;
+            text-align: center;
+            color: $txt-r;
+            &:hover{
+              color: $txt-w1;
+              background: $bg-y;
               transition: 200ms linear;
             }
           }
