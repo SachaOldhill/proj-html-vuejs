@@ -15,9 +15,11 @@ div#app {
         }
       }
       .navbar {
-        vertical-align: middle;
-        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        display: flex;
         li{
+          color: $txt-w1;
           padding-right: 20px;
           font-size: 20px;
         }
