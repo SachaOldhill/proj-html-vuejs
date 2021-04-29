@@ -7,10 +7,9 @@ div#app {
       right: 0;
       z-index: 9;
       padding: 40px;
+      display: flex;
+      justify-content: space-between;
       .logo {
-        display: inline-block;
-        vertical-align: middle;
-        padding: 30px;
         img {
           height: 70px;
         }
@@ -24,7 +23,9 @@ div#app {
         }
       }
       .navbar_button {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a{
           font-weight: bold;
           width: 250px;
@@ -74,6 +75,7 @@ div#app {
         .nav_slide_button {
           display: inline-block;
           a{
+            margin-right: 20px;
             font-weight: bold;
             width: 250px;
             padding: 14px 40px;
@@ -87,6 +89,10 @@ div#app {
               color: $txt-r;
               background: $bg-w1;
               transition: 200ms linear;
+            }
+            .fa-search{
+              font-size: 20px;
+              padding-right: 10px;
             }
           }
           .button{
@@ -103,6 +109,10 @@ div#app {
               color: $txt-w1;
               background: $bg-y;
               transition: 200ms linear;
+            }
+            .fa-user-plus{
+              font-size: 20px;
+              padding-right: 10px;
             }
           }
         }

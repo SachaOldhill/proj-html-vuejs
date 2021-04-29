@@ -5,11 +5,8 @@ div#app nav .navigation {
   right: 0;
   z-index: 9;
   padding: 40px;
-}
-div#app nav .navigation .logo {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 div#app nav .navigation .logo img {
   height: 70px;
@@ -23,7 +20,9 @@ div#app nav .navigation .navbar li {
   font-size: 20px;
 }
 div#app nav .navigation .navbar_button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 div#app nav .navigation .navbar_button a {
   font-weight: bold;
@@ -75,6 +74,7 @@ div#app nav .container_img .layover .nav_slide_button {
   display: inline-block;
 }
 div#app nav .container_img .layover .nav_slide_button a {
+  margin-right: 20px;
   font-weight: bold;
   width: 250px;
   padding: 14px 40px;
@@ -89,6 +89,10 @@ div#app nav .container_img .layover .nav_slide_button a:hover {
   color: #e56768;
   background: #ffffff;
   transition: 200ms linear;
+}
+div#app nav .container_img .layover .nav_slide_button a .fa-search {
+  font-size: 20px;
+  padding-right: 10px;
 }
 div#app nav .container_img .layover .nav_slide_button .button {
   font-weight: bold;
@@ -105,6 +109,10 @@ div#app nav .container_img .layover .nav_slide_button .button:hover {
   color: #ffffff;
   background: #e9d758;
   transition: 200ms linear;
+}
+div#app nav .container_img .layover .nav_slide_button .button .fa-user-plus {
+  font-size: 20px;
+  padding-right: 10px;
 }
 div#app nav .container_img img {
   width: 100%;
