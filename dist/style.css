@@ -23,26 +23,22 @@ div#app nav .navigation .navbar li {
 }
 div#app nav .navigation .navbar_button {
   display: inline-block;
+}
+div#app nav .navigation .navbar_button a {
   font-weight: bold;
   width: 250px;
-  padding: 14px 20px;
+  padding: 14px 40px;
   border-radius: 50px;
   font-size: 30px;
   background-color: #e9d758;
-  transition: 500ms linear;
+  transition: 200ms linear;
   text-align: center;
-}
-div#app nav .navigation .navbar_button a {
   color: #ffffff;
 }
 div#app nav .navigation .navbar_button a:hover {
   color: #e56768;
-  transition: 500ms linear;
-}
-div#app nav .navigation .navbar_button:hover {
-  color: #e56768;
   background: #ffffff;
-  transition: 500ms linear;
+  transition: 200ms linear;
 }
 div#app nav .container_img {
   position: relative;
@@ -56,7 +52,10 @@ div#app nav .container_img .layover {
   left: 0;
 }
 div#app nav .container_img .layover h1 {
-  font-size: 400px;
+  font-size: 100px;
+}
+div#app nav .container_img .layover p {
+  font-size: 30px;
 }
 div#app nav .container_img img {
   width: 100%;
@@ -64,17 +63,11 @@ div#app nav .container_img img {
 }
 div#app main .graduation {
   background: url("edu/img/home-background.png");
-  height: 1000px;
-  background-size: 100px;
+  background-size: cover;
+  height: 600px;
 }
 div#app main .graduation .img_book {
   height: 80px;
-}
-div#app main .graduation .img_back {
-  height: 600px;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 div#app main .graduation .ttt {
   padding: 40px;

@@ -24,26 +24,21 @@ div#app {
       }
       .navbar_button {
         display: inline-block;
-
-        font-weight: bold;
-        width: 250px;
-        padding: 14px 20px;
-        border-radius: 50px;
-        font-size: 30px;
-        background-color: $bg-y;
-        transition: 500ms linear;
-        text-align: center;
         a{
+          font-weight: bold;
+          width: 250px;
+          padding: 14px 40px;
+          border-radius: 50px;
+          font-size: 30px;
+          background-color: $bg-y;
+          transition: 200ms linear;
+          text-align: center;
           color: $txt-w1;
           &:hover{
             color: $txt-r;
-            transition: 500ms linear;
+            background: $bg-w1;
+            transition: 200ms linear;
           }
-        }
-        &:hover{
-          color: $txt-r;
-          background: $bg-w1;
-          transition: 500ms linear;
         }
       }
     }
@@ -58,7 +53,10 @@ div#app {
         top: 0;
         left: 0;
         h1{
-          font-size: 400px;
+          font-size: 100px;
+        }
+        p{
+          font-size: 30px;
         }
       }
       img{
@@ -70,15 +68,10 @@ div#app {
   main{
     .graduation{
       background: url('edu/img/home-background.png');
-      height: 1000px;
-      background-size: 100px;
+      background-size: cover;
+      height: 600px;
       .img_book{
         height: 80px;
-      }
-      .img_back{
-        height: 600px;
-        width: 100%;
-        object-fit: contain;
       }
       .ttt{
         padding: 40px;
