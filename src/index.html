@@ -36,14 +36,22 @@
       </div>
       <div class="cont">
         <div v-for=''class="container_img">
-          <img src="edu\img\slider2.jpg" alt="">
+          <img :src="arrayImg[currentImg]" alt="">
           <div class="layover">
             <div class="nav_slide">
+              <div @click="go_next" :class="nextImg" class="next">
+               <i class="fas fa-angle-right"></i>
+              </div>
+              <div class="">
               <h1>Lead. Inspire. Win</h1>
               <p>At EduPrime, it doesn’t matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course</p>
               <div class="nav_slide_button">
                 <a href="#"><i class="fas fa-search"></i>search courses</a>
                 <a class="button"href="#"><i class="fas fa-user-plus"></i>view courses</a>
+              </div>
+              </div>
+              <div @click="go_prev" :class="prevImg" class="prev">
+                <i class="fas fa-angle-left"></i>
               </div>
             </div>
           </div>
