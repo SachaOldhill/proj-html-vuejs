@@ -34,17 +34,17 @@
           <a class="button"href="#">view courses</a>
         </div>
       </div>
-      <div class="cont">
-        <div v-for=''class="container_img">
-          <img :src="arrayImg[currentImg]" alt="">
+      <div class="">
+        <div class="container_img">
+          <img :src="slides[currentIndex].img" alt="">
           <div class="layover">
             <div class="nav_slide">
               <div @click="go_next" :class="nextImg" class="next">
                <i class="fas fa-angle-right"></i>
               </div>
               <div class="">
-              <h1>Lead. Inspire. Win</h1>
-              <p>At EduPrime, it doesn’t matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course</p>
+              <h1>{{slides[currentIndex].h1}}</h1>
+              <p>{{slides[currentIndex].p}}</p>
               <div class="nav_slide_button">
                 <a href="#"><i class="fas fa-search"></i>search courses</a>
                 <a class="button"href="#"><i class="fas fa-user-plus"></i>view courses</a>
@@ -60,15 +60,31 @@
     </nav>
     <main>
       <section class="graduation">
+        <div class="graduation_container">          
        <div class="graduation_txt">
-          <img class="img_book"src="edu\img\Books-icon.png" alt="">
-          <h1>Thousands of courses for any type of student</h1>
-          <p>At EduPrime, it doesn’t matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.</p>
-          <a href="#">Browse through courses</a>
+            <img class="img_book"src="edu\img\Books-icon.png" alt="">
+            <h1>Thousands of courses for any type of student</h1>
+            <p>At EduPrime, it doesn’t matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course in a matter of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the number of courses it provides.</p>
+            <a href="#">Browse through courses</a>
+         </div>
+         <div class="graduation_img">
+           <img src="edu\img\Graduation-Illustration.png" alt="">
+         </div>
        </div>
-       <div class="graduation_img">
-         <img src="edu\img\Graduation-Illustration.png" alt="">
-       </div>
+      </section>
+      <section class="faculties">
+        <div class="title">
+          <h1>Faculties available at EduPrime</h1>
+          <p>A single university with a load of courses, tailored to satisfy any student’s needs.</p>
+        </div>
+        <div class="faculties_type">
+          <div class="faculties_bar">
+            <div class="faculty_item">
+              <img src="edu\img\Computer-tabs-v2.png" alt="">
+              <p>Computer science</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </div>

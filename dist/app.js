@@ -20,20 +20,35 @@ function initVue() {
       }, {
         "name": "Courses"
       }],
-      text: [{
+      slides: [{
+        'img': 'edu/img/slider1.jpg',
         'h1': 'inspire',
         'p': 'text lorem ipsum'
       }, {
-        'h1': 'leaaaaaa',
-        'p': 'aaaaaaaa ipsum'
+        'img': 'edu/img/slider2.jpg',
+        'h1': 'Slide 2 ',
+        'p': 'lorem ipsum text'
       }, {
+        'img': 'edu/img/slider3.jpg',
+        'h1': 'Lead. Inspire. Win',
+        'p': 'At EduPrime, it doesn’t matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course'
+      }],
+      facultiesArr: [{
+        'img': 'edu/img/slider1.jpg',
+        'h1': 'inspire',
+        'p': 'text lorem ipsum'
+      }, {
+        'img': 'edu/img/slider2.jpg',
+        'h1': 'Slide 2 ',
+        'p': 'lorem ipsum text'
+      }, {
+        'img': 'edu/img/slider3.jpg',
         'h1': 'Lead. Inspire. Win',
         'p': 'At EduPrime, it doesn’t matter what domain you wish to pursue a career in. Here you can find a course that satisfies your needs within a click away and applies for a course'
       }],
       'activeIndex': 0,
-      'currentImg': 0,
+      'currentIndex': 0,
       'arrayImg': ['edu/img/slider1.jpg', 'edu/img/slider2.jpg', 'edu/img/slider3.jpg'],
-      'arrayTxt': ['edu/img/slider1.jpg', 'edu/img/slider2.jpg', 'edu/img/slider3.jpg'],
       'nextImg': 'next',
       'prevImg': 'prev',
       'timer': null
@@ -41,20 +56,20 @@ function initVue() {
     computed: {},
     methods: {
       go_next: function go_next() {
-        this.currentImg++;
+        this.currentIndex++;
 
-        if (this.currentImg >= this.arrayImg.length) {
-          this.currentImg = 0;
+        if (this.currentIndex >= this.arrayImg.length) {
+          this.currentIndex = 0;
         }
 
         console.log('go next');
       },
       go_prev: function go_prev() {
-        this.currentImg--;
+        this.currentIndex--;
         this.activeIndex--;
 
-        if (this.currentImg < 0) {
-          this.currentImg = this.arrayImg.length - 1;
+        if (this.currentIndex < 0) {
+          this.currentIndex = this.arrayImg.length - 1;
         }
 
         if (this.activeIndex < 0) {
@@ -74,6 +89,10 @@ function initVue() {
         this.activeIndex = this.nav.indexOf(bar);
         console.log('enter');
       }
+    },
+    mounted: function mounted() {
+      console.log('log');
+      this.intervalCounter();
     }
   });
 }
